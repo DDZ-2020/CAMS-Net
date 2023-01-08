@@ -112,8 +112,6 @@ class MyDataset(Dataset):
     def __len__(self):
         return len(self.img_label)
 
-
-
 if __name__ == '__main__':
     img_label_txt = r''
 
@@ -121,7 +119,6 @@ if __name__ == '__main__':
     trainloader = Data.DataLoader(dataset=train_datasets, batch_size=1, shuffle=False, num_workers=0)
 
     for step, (imgs, mask, _) in enumerate(trainloader):
-        # print(mask[0].shape)
         print(imgs.shape)
 
 
