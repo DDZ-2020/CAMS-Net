@@ -96,7 +96,6 @@ def transform_translate_vertical(image, mask, scale=0.5):
 
     return image_pad, mask_pad
 
-
 if __name__ == '__main__':
     img_path = r''
     label_path = r''
