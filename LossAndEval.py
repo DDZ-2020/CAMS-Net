@@ -207,7 +207,7 @@ def jaccard(output, target):
 def sensitivity_score(output, target):
     smooth = 1e-5
     if torch.is_tensor(output):
-        output = torch.sigmoid(output).data.cpu().numpy()  # 0,1之间
+        output = torch.sigmoid(output).data.cpu().numpy()
     if torch.is_tensor(target):
         target = target.data.cpu().numpy()
 
